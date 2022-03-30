@@ -1,0 +1,26 @@
+{
+  "name": "ranchbackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-dotenv && react-scripts start",
+    "local": "serve -s build -l 3603",
+    "build": "react-dotenv && react-scripts build",
+    "update": "git pull origin main && npm i && react-scripts build && react-dotenv && pm2 restart ranchbackend",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@gmod/indexedfasta": "^2.0.2",
+    "body-parser": "^1.19.2",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.4",
+    "react-dotenv": "^0.1.3"
+  }
+}
