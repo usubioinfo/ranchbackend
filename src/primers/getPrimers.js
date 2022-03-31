@@ -25,7 +25,7 @@ PRIMER_PRODUCT_SIZE_RANGE=100-200\nPRIMER_EXPLAIN_FLAG=1\n=`
 
 
     let output;
-    const getS = spawn('/opt/software/primer3/2.5.0/src/primer3_core', ['/home/naveen/Desktop/ranchsatdb/ranchbackend/primers/input.txt']);
+    const getS = spawn('/opt/software/primer3/2.5.0/src/primer3_core', [path.join(__dirname,'/input.txt')]);
     getS.stdout.on('data', (data) => {
         output = data.toString();
 
