@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 const { once } = require('events');
 const fs = require('fs');
-
+const path = require('path');
 
 const getPrimers = (seq, motif_length, minS, maxS, minTM, maxTM, minGC, maxGC, flank) => {
 
@@ -20,7 +20,7 @@ PRIMER_PICK_LEFT_PRIMER=1\nPRIMER_PICK_INTERNAL_OLIGO=0\nPRIMER_PICK_RIGHT_PRIME
 PRIMER_MIN_SIZE=${minS}\nPRIMER_MAX_SIZE=${maxS}\nPRIMER_MIN_TM=${minTM}\nPRIMER_MAX_TM=${maxTM}
 PRIMER_MIN_GC=${minGC}\nPRIMER_MAX_GC=${maxGC}\nSEQUENCE_TARGET=${excludeRegion}\nSEQUENCE_INTERNAL_EXCLUDE_REGION=${excludeRegion}
 PRIMER_PRODUCT_SIZE_RANGE=100-200\nPRIMER_EXPLAIN_FLAG=1\n=`
-    fs.writeFileSync("/home/naveen/Desktop/ranchsatdb/ranchbackend/primers/input.txt", datainput);
+    fs.writeFileSync(path.join(__dirname,"input.txt"), datainput);
     // console.log(__dirname)
 
 
