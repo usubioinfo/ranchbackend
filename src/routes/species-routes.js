@@ -126,9 +126,10 @@ next();
 });
 
 router.route('/sinfo').get(async(req, res) => {
+  
+  let {infotable} = req.query
 
-
-  results = await Bos['binfo'].find({}).exec()
+  results = await Bos[infotable].find({}).exec()
  
    res.json(results)
 
