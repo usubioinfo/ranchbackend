@@ -79,7 +79,7 @@ const SpeciesInfoSchema = new mongoose.Schema({
         } 
 });
 
-const bInfo = mongoose.model('bosdata', SpeciesInfoSchema)
+const bInfo = mongoose.model('spinfo_bos', SpeciesInfoSchema)
 
 const Bos_taurus = mongoose.model('bos_taurus', SpeciesSchema)
 const Capra_hircus = mongoose.model('capra_hircus', SpeciesSchema)
@@ -88,7 +88,7 @@ const Capra_hircus = mongoose.model('capra_hircus', SpeciesSchema)
 
 module.exports ={
     'bos_taurus':Bos_taurus,
-    'bosdata':bInfo,
+    'spinfo_bos':bInfo,
     'capra_hircus':Capra_hircus,
 }
 
