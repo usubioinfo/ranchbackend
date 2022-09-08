@@ -86,6 +86,9 @@ const catInfo = mongoose.model('spinfo_cats', SpeciesInfoSchema)
 const donkeyInfo = mongoose.model('spinfo_donkeys', SpeciesInfoSchema)
 const horseInfo = mongoose.model('spinfo_horses', SpeciesInfoSchema)
 const pigInfo = mongoose.model('spinfo_pigs', SpeciesInfoSchema)
+const buffaloInfo = mongoose.model('spinfo_buffalos', SpeciesInfoSchema)
+const sheepInfo = mongoose.model('spinfo_sheeps', SpeciesInfoSchema)
+const yakInfo = mongoose.model('spinfo_yaks', SpeciesInfoSchema)
 
 const Bos_taurus = mongoose.model('bos_taurus', SpeciesSchema)
 const Capra_hircus = mongoose.model('capra_hircus', SpeciesSchema)
@@ -94,7 +97,9 @@ const Felis_catus = mongoose.model('felis_catus', SpeciesSchema)
 const Equus_asinus = mongoose.model('equus_asinus', SpeciesSchema)
 const Equus_callabus = mongoose.model('equus_callabus', SpeciesSchema)
 const Sus_sacrofa = mongoose.model('sus_sucrofas', SpeciesSchema)
-
+const Bubalus_bubalis = mongoose.model('bubalus_bubalis', SpeciesSchema)
+const Ovis_aries = mongoose.model('ovis_aries', SpeciesSchema)
+const Bos_grunniens = mongoose.model('bos_grunniens', SpeciesSchema)
 
 
 module.exports ={
@@ -111,7 +116,13 @@ module.exports ={
     'equus_callabus':Equus_callabus,
     'spinfo_horses':horseInfo,
     'sus_sucrofas':Sus_sacrofa,
-    'spinfo_pigs':pigInfo
+    'spinfo_pigs':pigInfo,
+    'bubalus_bubalis': Bubalus_bubalis,
+    'spinfo_buffalos': buffaloInfo,
+    'ovis_aries':Ovis_aries,
+    'spinfo_sheeps':sheepInfo,
+    'bos_grunniens':Bos_grunniens,
+    'spinfo_yaks': yakInfo
 
 
 }
