@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "update": "git pull origin main && npm i && && pm2 restart ranchbackend"
+    "update": "git pull origin master && npm i && pm2 restart ranchbackend"
     
   },
   "keywords": [],
