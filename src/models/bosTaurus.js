@@ -97,7 +97,7 @@ const Capra_hircus = mongoose.model('capra_hircus', SpeciesSchema)
 const Canis_lupus = mongoose.model('canis_lupus', SpeciesSchema)
 const Felis_catus = mongoose.model('felis_catus', SpeciesSchema)
 const Equus_asinus = mongoose.model('equus_asinus', SpeciesSchema)
-const Equus_callabus = mongoose.model('equus_callabus', SpeciesSchema)
+const Equus_callabus = mongoose.model('equus_caballus', SpeciesSchema)
 const Sus_sacrofa = mongoose.model('sus_sucrofas', SpeciesSchema)
 const Bubalus_bubalis = mongoose.model('bubalus_bubalis', SpeciesSchema)
 const Ovis_aries = mongoose.model('ovis_aries', SpeciesSchema)
@@ -116,7 +116,7 @@ module.exports ={
     'spinfo_cats':catInfo,
     'equus_asinus':Equus_asinus,
     'spinfo_donkeys':donkeyInfo,
-    'equus_callabus':Equus_callabus,
+    'equus_caballus':Equus_callabus,
     'spinfo_horses':horseInfo,
     'sus_sucrofas':Sus_sacrofa,
     'spinfo_pigs':pigInfo,
