@@ -25,7 +25,9 @@ PRIMER_PRODUCT_SIZE_RANGE=100-200\nPRIMER_EXPLAIN_FLAG=1\n=`
 
 
     let output;
-    const getS = spawn('/opt/software/primer3/2.5.0/src/primer3_core', [path.join(__dirname,'/input.txt')]);
+    let prpath = '/opt/software/primer3/2.6.1/src/primer3_core'
+    // let prpath = '/opt/primer3/src/primer3_core'
+    const getS = spawn(prpath, [path.join(__dirname,'/input.txt')]);
     getS.stdout.on('data', (data) => {
         output = data.toString();
 
@@ -42,7 +44,7 @@ PRIMER_PRODUCT_SIZE_RANGE=100-200\nPRIMER_EXPLAIN_FLAG=1\n=`
 
         getS.stdout.on('end', async function (code) {
 
-
+            
             const dataPrimer = output.split('\n')
             const pdata = {
                 'f1': dataPrimer[28].split("=")[1],
@@ -52,24 +54,27 @@ PRIMER_PRODUCT_SIZE_RANGE=100-200\nPRIMER_EXPLAIN_FLAG=1\n=`
                 'f1GC': dataPrimer[34].split("=")[1],
                 'r1GC': dataPrimer[35].split("=")[1],
                 'p1psize': dataPrimer[46].split("=")[1],
-                'f2': dataPrimer[50].split("=")[1],
-                'r2': dataPrimer[51].split("=")[1],
-                'f2tm': dataPrimer[54].split("=")[1],
-                'r2tm': dataPrimer[55].split("=")[1],
-                'f2GC': dataPrimer[56].split("=")[1],
-                'r2GC': dataPrimer[57].split("=")[1],
-                'p2psize': dataPrimer[68].split("=")[1],
-                'f3': dataPrimer[72].split("=")[1],
-                'r3': dataPrimer[73].split("=")[1],
-                'f3tm': dataPrimer[76].split("=")[1],
-                'r3tm': dataPrimer[77].split("=")[1],
-                'f3GC': dataPrimer[78].split("=")[1],
-                'r3GC': dataPrimer[79].split("=")[1],
-                'p3psize': dataPrimer[90].split("=")[1],
+                'f2': dataPrimer[51].split("=")[1],
+                'r2': dataPrimer[52].split("=")[1],
+                'f2tm': dataPrimer[55].split("=")[1],
+                'r2tm': dataPrimer[56].split("=")[1],
+                'f2GC': dataPrimer[57].split("=")[1],
+                'r2GC': dataPrimer[58].split("=")[1],
+                'p2psize': dataPrimer[69].split("=")[1],
+                'f3': dataPrimer[74].split("=")[1],
+                'r3': dataPrimer[75].split("=")[1],
+                'f3tm': dataPrimer[78].split("=")[1],
+                'r3tm': dataPrimer[79].split("=")[1],
+                'f3GC': dataPrimer[80].split("=")[1],
+                'r3GC': dataPrimer[81].split("=")[1],
+                'p3psize': dataPrimer[92].split("=")[1],
 
             }
             // console.log(output)
-            res(pdata);
+
+                res(pdata);
+            
+            
 
         })
     });
