@@ -25,8 +25,8 @@ PRIMER_PRODUCT_SIZE_RANGE=100-200\nPRIMER_EXPLAIN_FLAG=1\n=`
 
 
     let output;
-    let prpath = '/opt/software/primer3/2.6.1/src/primer3_core'
-    // let prpath = '/opt/primer3/src/primer3_core'
+    // let prpath = '/opt/software/primer3/2.6.1/src/primer3_core'
+    let prpath = '/opt/primer3/src/primer3_core'
     const getS = spawn(prpath, [path.join(__dirname,'/input.txt')]);
     getS.stdout.on('data', (data) => {
         output = data.toString();

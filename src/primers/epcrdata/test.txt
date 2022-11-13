@@ -1,0 +1,36 @@
+
+Primer name Primer1
+Amplimer 1
+	Sequence: chr1  
+	
+	AGAGGAGGGTCAGGGAAAAGA hits forward strand at 100017986 with 0 mismatches
+	TTCTGTACCACAGGTGCCAC hits reverse strand at [58515988] with 0 mismatches
+	Amplimer length: 138 bp
+
+Primer name Primer2
+Amplimer 1
+	Sequence: chr1  
+	
+	AGAGGAGGGTCAGGGAAAAGA hits forward strand at 100017986 with 0 mismatches
+	GTTCTGTACCACAGGTGCCA hits reverse strand at [58515987] with 0 mismatches
+	Amplimer length: 139 bp
+
+Primer name Primer3
+Amplimer 1
+	Sequence: chr1  
+	
+	AGAGGAGGGTCAGGGAAAAGA hits forward strand at 100017986 with 0 mismatches
+	GGGATCAAACCCGCATCTCT hits reverse strand at [58515943] with 0 mismatches
+	Amplimer length: 183 bp
+Amplimer 2
+	Sequence: chr1  
+	
+	AGAGGAGGGTCAGGGAAAAGA hits forward strand at 100017986 with 0 mismatches
+	GGGATCAAACCCGCATCTCT hits reverse strand at [11065839] with 0 mismatches
+	Amplimer length: 47450287 bp
+Amplimer 3
+	Sequence: chr1  
+	
+	AGAGGAGGGTCAGGGAAAAGA hits forward strand at 100017986 with 0 mismatches
+	GGGATCAAACCCGCATCTCT hits reverse strand at [8086011] with 0 mismatches
+	Amplimer length: 50430115 bp

@@ -4,6 +4,7 @@ const router = express.Router();
 const { IndexedFasta } = require('@gmod/indexedfasta')
 const getSeq = require('../data/getSeq')
 const getPrimers = require('../primers/getPrimers')
+const runEPCR = require('../primers/runEPCR')
 
 const Bos = require("../models/bosTaurus");
 
@@ -149,9 +150,20 @@ router.route('/sinfo').get(async(req, res) => {
    res.send(pdata)
  
  });
+
+ router.route('/epcr').get(async(req, res) => {
+
+
+  const primerdata = JSON.parse(req.query.primerdata)
+  const seqdata = req.query.seq
+  const mismatch = req.query.mismatch
+  const genome = req.query.genome
  
-
-
-
-
+   const pdata = await runEPCR(primerdata, seqdata, mismatch, genome)
+ 
+   res.send(pdata)
+ 
+ });
+ 
+ 
 module.exports = router;
