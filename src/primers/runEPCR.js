@@ -34,7 +34,7 @@ const runEPCR = (item, seq, mismatch, genome) => {
        
 
     let sequence;
-    let prpath = '/opt/software/emboss/EMBOSS-6.6.0/emboss'
+    let prpath = '/opt/software/emboss/EMBOSS-6.6.0/emboss/primersearch'
     // let prpath = '/opt/homebrew/bin/primersearch'
     if (seq != ''){
         sequence = path.join(__dirname,'epcrdata/dnaseq.fa')
