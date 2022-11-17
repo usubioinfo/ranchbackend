@@ -24,7 +24,12 @@ const runPrediction = (id, filedata, minRepeat, maxRepeat, mono, all) => {
     
     const headings = cells.shift();
     
-    const obj = cells.map(function (el) {
+      
+    var objd = cells.filter(function (el) {
+      return el != '';
+    });
+
+    const obj = objd.map(function (el) {
         let obj = {};
         for (let i = 0, l = el.length; i < l; i++) {
           obj[headings[i]] = isNaN(Number(el[i])) ? el[i] : +el[i];
