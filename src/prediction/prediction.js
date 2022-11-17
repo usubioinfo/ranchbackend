@@ -19,13 +19,12 @@ const runPrediction = (id, filedata, minRepeat, maxRepeat, mono, all) => {
    
     const ampli = fs.readFileSync(path.join(__dirname,`preddata/pred${id}.ssr.txt`), 'utf8')
     
-    console.log(ampli)
     
     const cells = ampli.split('\n').map(function (el) { return el.split(/\s+/); });
     
     const headings = cells.shift();
 
-    console.log(headings)
+   
     
     const obj = cells.map(function (el) {
         let obj = {};

@@ -16,7 +16,14 @@ const runBlast = (id, filedata, program, genome, word, target, evalue) => {
     return new Promise((res, rej) => {
        
    
-    const cells = fs.readFileSync(path.join(__dirname,`preddata/pred${id}.out.xml`), 'utf8')
+    const ampli = fs.readFileSync(path.join(__dirname,`preddata/pred${id}.out.xml`), 'utf8')
+
+    // const ampli = fs.readFileSync(path.join(__dirname,`preddata/test.out.xml`), 'utf8')
+
+    const cells = ampli.split('\n').map(function (el) { return el.split(/\s+/); });
+
+   
+
 
     const headings = ['qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen', 'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore']
     
