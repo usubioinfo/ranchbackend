@@ -206,7 +206,7 @@ router.route('/sinfo').get(async(req, res) => {
 
   const genome = req.body.genome
 
-  const gdata = req.body.gdata.toString()
+  const gdata = req.body.gdata
   
   const word = req.body.word
   const target = req.body.target
