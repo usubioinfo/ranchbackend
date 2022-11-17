@@ -2,7 +2,6 @@ const { spawn } = require('child_process');
 const { once } = require('events');
 const fs = require('fs');
 const path = require('path');
-  
 
 const runEPCR = (item, seq, mismatch, genome) => {
 

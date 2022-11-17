@@ -6,7 +6,6 @@
   "scripts": {
     "start": "node index.js",
     "update": "git pull origin master && npm i && pm2 restart ranchbackend"
-    
   },
   "keywords": [],
   "author": "",
@@ -17,7 +16,11 @@
     "child_process": "^1.0.2",
     "cors": "^2.8.5",
     "express": "^4.17.3",
+    "express-fileupload": "^1.4.0",
+    "filereader": "^0.10.3",
     "mongoose": "^6.2.4",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
     "react-dotenv": "^0.1.3"
   }
 }

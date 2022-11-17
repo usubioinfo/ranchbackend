@@ -1,12 +1,16 @@
 const express = require('express');
-
 const router = express.Router();
 const { IndexedFasta } = require('@gmod/indexedfasta')
 const getSeq = require('../data/getSeq')
 const getPrimers = require('../primers/getPrimers')
 const runEPCR = require('../primers/runEPCR')
+const runPrediction = require('../prediction/prediction')
+const runBlast = require('../prediction/blast')
 
 const Bos = require("../models/bosTaurus");
+const path = require('path');
+
+const fs = require('fs');
 
 
 router.route('/total/').get((req, res) => {
@@ -165,5 +169,66 @@ router.route('/sinfo').get(async(req, res) => {
  
  });
  
+ router.route('/prediction').post( async(req, res) => {
+  
+  
+  let filedata;
+  const id = Date.now()
+
+  const genome = req.body.genome
+  
+  const minRepeat = req.body.minRepeat
+  const maxRepeat = req.body.maxRepeat
+  const mono = req.body.mono
+  const all = req.body.all
+  if (req.files != null){
+  const filename = req.files.file
+  
+  await filename.mv(path.join(__dirname,'../prediction/preddata/') + id+'.fa')
+  filedata = path.join(__dirname,'../prediction/preddata/') + id+'.fa'
+  }
+  if (genome !=''){
+    fs.writeFileSync(path.join(__dirname,`../prediction/preddata/${id}.fa`), genome)
+    filedata = path.join(__dirname,`../prediction/preddata/${id}.fa`)
+  }
+  const result = await runPrediction(id, filedata,  minRepeat, maxRepeat, mono, all)
+
+  res.send(result)
+  
  
+ });
+ 
+ router.route('/blast').post( async(req, res) => {
+  
+  
+  let filedata;
+  const id = Date.now()
+
+  const genome = req.body.genome
+
+  const gdata = req.body.gdata
+  
+  const word = req.body.word
+  const target = req.body.target
+  const evalue = req.body.evalue
+  const program = req.body.program
+
+  console.log(program)
+
+  if (req.files != null){
+  const filename = req.files.file
+  
+  await filename.mv(path.join(__dirname,'../prediction/preddata/') + id+'.fa')
+  filedata = path.join(__dirname,'../prediction/preddata/') + id+'.fa'
+  }
+  if (gdata !=''){
+    fs.writeFileSync(path.join(__dirname,`../prediction/preddata/${id}.fa`), gdata)
+    filedata = path.join(__dirname,`../prediction/preddata/${id}.fa`)
+  }
+  const result = await runBlast(id, filedata, program, genome, word, target, evalue)
+
+  res.send(result)
+  
+ 
+ });
 module.exports = router;

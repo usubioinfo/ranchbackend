@@ -1,13 +1,19 @@
 const express = require ('express')
 const cors = require ('cors')
 const db = require('./src/db')
-
 const app = express()
 const apiPort = 3603
+const fileUpload = require('express-fileupload');
+
 const routes =require('./src/routes/species-routes')
 app.use(express.urlencoded({extended:true}))
 app.use(cors("*"))
+
 app.use(express.json())
+app.use(fileUpload({
+  createParentPath: true
+}));
+
 // app.use(require("./routes/species-routes"));
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
