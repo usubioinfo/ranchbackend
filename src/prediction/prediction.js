@@ -24,6 +24,8 @@ const runPrediction = (id, filedata, minRepeat, maxRepeat, mono, all) => {
     const cells = ampli.split('\n').map(function (el) { return el.split(/\s+/); });
     
     const headings = cells.shift();
+
+    console.log(headings)
     
     const obj = cells.map(function (el) {
         let obj = {};

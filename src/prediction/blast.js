@@ -17,14 +17,23 @@ const runBlast = (id, filedata, program, genome, word, target, evalue) => {
        
    
     const ampli = fs.readFileSync(path.join(__dirname,`preddata/pred${id}.out.xml`), 'utf8')
+
+    const headings = ['qseqid', 'sseqid', 'pident', 'length', 'mismatch', 'gapopen', 'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore']
     
     console.log(ampli)
-    
+    const obj = cells.map(function (el) {
+        let obj = {};
+        for (let i = 0, l = el.length; i < l; i++) {
+          obj[headings[i]] = isNaN(Number(el[i])) ? el[i] : +el[i];
+        }
+        return obj;
+      });
+      const jsondata = JSON.stringify(obj);
   
     
 
     
-    res(ampli)
+    res(jsondata)
 
     });
 
