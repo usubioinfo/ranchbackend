@@ -1,0 +1,15 @@
+ID	Seq_length	SSR_type	SSR	Size	Start	End
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	AT	18	13344	13361
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	tri	CTG	18	13402	13419
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	TA	12	13696	13707
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	TC	12	14980	14991
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	tri	AGA	18	16186	16203
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	AC	16	21615	21630
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	AT	10	22250	22259
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	mono	A	12	25288	25299
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	GT	10	2972	2981
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	TG	10	2985	2994
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	AT	10	4284	4293
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	di	GA	10	4916	4925
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	tri	CTG	15	7265	7279
+NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	25690	mono	T	16	8945	8960

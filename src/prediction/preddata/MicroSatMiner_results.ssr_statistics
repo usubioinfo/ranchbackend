@@ -1,0 +1,36 @@
+Distribution of each motif unit in sequence
+Motif_unit	 Total
+1	15
+2	9
+3	1
+Total Unit	Total Occurence
+3	25
+
+Distribution of each repeat type
+Repeat	 Total
+A	9
+T	6
+AT	6
+AAC	1
+AC	1
+TG	1
+TA	1
+Total Unit	Total Occurence
+7	25
+
+Distribution each group of repeat type
+Repeat_group	 Total
+A/T	15
+AT/AT	6
+AC/GT	1
+TG/CA	1
+AAC/GTT	1
+TA/TA	1
+Total Unit	Total Occurence
+6	25
+
+Per megabase frequency of repeats in each sequence
+SeqID	Total_Motifs	SeqSize	Frequency(Motifs/Mb)
+>chr1	25	57408	435.479375696767
+total_above	total_above	total_above	average_frequency
+1	25	57408	435.479375696767

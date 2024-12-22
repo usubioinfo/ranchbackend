@@ -1,0 +1,1 @@
+ID	Seq_length	SSR_type	SSR	Size	Start	End

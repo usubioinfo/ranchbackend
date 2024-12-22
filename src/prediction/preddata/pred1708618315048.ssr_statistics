@@ -1,0 +1,18 @@
+Distribution of each motif unit in sequence
+Motif_unit	 Total
+Total Unit	Total Occurence
+0	0
+
+Distribution of each repeat type
+Repeat	 Total
+Total Unit	Total Occurence
+0	0
+
+Distribution each group of repeat type
+Repeat_group	 Total
+Total Unit	Total Occurence
+0	0
+
+Per megabase frequency of repeats in each sequence
+SeqID	Total_Motifs	SeqSize	Frequency(Motifs/Mb)
+total_above	total_above	total_above	average_frequency

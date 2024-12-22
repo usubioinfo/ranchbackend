@@ -1,0 +1,42 @@
+Distribution of each motif unit in sequence
+Motif_unit	 Total
+2	9
+3	3
+1	2
+Total Unit	Total Occurence
+3	14
+
+Distribution of each repeat type
+Repeat	 Total
+AT	3
+CTG	2
+AC	1
+A	1
+T	1
+TG	1
+TC	1
+AGA	1
+GA	1
+TA	1
+GT	1
+Total Unit	Total Occurence
+11	14
+
+Distribution each group of repeat type
+Repeat_group	 Total
+AT/AT	3
+AC/GT	2
+CTG/CAG	2
+TC/GA	2
+A/T	2
+TG/CA	1
+TA/TA	1
+AGA/TCT	1
+Total Unit	Total Occurence
+8	14
+
+Per megabase frequency of repeats in each sequence
+SeqID	Total_Motifs	SeqSize	Frequency(Motifs/Mb)
+>NC_037328.1:99995832-100031889 Bos taurus isolate L1 Dominette 01449 registration number 42190680 breed Hereford chromosome 1, ARS-UCD2.0, whole genome shotgun sequence	14	25690	544.959128065395
+total_above	total_above	total_above	average_frequency
+1	14	25690	544.959128065395

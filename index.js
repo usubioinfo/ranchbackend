@@ -22,7 +22,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 // })
 const accessControl = (req, res,next) => {
 const allowedOrigins = [
-    'http://127.0.0.1:3603', 'http://localhost:3603','http://localhost:3603', 'http:bioinfo.usu.edu'
+    'http://127.0.0.1:3603', 'http://localhost:3603','http://localhost:3603', 'https://kaabil.net'
   ];
   const origin = req.headers.origin;
   /*
@@ -30,7 +30,7 @@ const allowedOrigins = [
     res.setHeader('Access-Control-Allow-Origin', origin);
   }
   */
-  res.header('Access-Control-Allow-Origin', 'http://bioinfo.usu.edu');
+  res.header('Access-Control-Allow-Origin', 'https://kaabil.net');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, KBL-User-Agent');
   res.header('Access-Control-Allow-Credentials', 'true');
